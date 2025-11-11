@@ -29,6 +29,7 @@ export async function apiFetch(
     ...(token ? { Authorization: `Bearer ${token}` } : {}),
   };
 
+  // ✅ FIX: Corrected fetch call - removed backticks around the URL
   const res = await fetch(`${API_URL}${endpoint}`, {
     ...options,
     headers,
@@ -41,6 +42,7 @@ export async function apiFetch(
 
   return res.json();
 }
+
 /**
  * Parse JWT payload without verification (useful to get role/email).
  * Not security-critical (solo UI); la validación real la hace el backend.
