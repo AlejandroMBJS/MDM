@@ -124,7 +124,11 @@ app.include_router(horarios_base.router, prefix="/api/v1/horarios-base", tags=["
 app.include_router(emergency_contacts.router, prefix="/api/v1/emergency-contacts", tags=["Emergency Contacts"])
 app.include_router(dependents.router, prefix="/api/v1/dependents", tags=["Dependents"])
 app.include_router(employee_documents.router, prefix="/api/v1/documents", tags=["Documents"])
-app.include_router(job_history.router, prefix="/api/v1/job-history", tags=["Job History"])
+app.include_router(
+    job_history.router, 
+    prefix="/api/v1/users/{user_id}/job-history", 
+    tags=["Job History"]
+)
 app.include_router(turnos.router, prefix="/api/v1/turnos", tags=["Turnos"])
 app.include_router(time_off_balances.router, prefix="/api/v1/time-off-balances", tags=["Time Off Balances"])
 app.include_router(employee_benefits.router, prefix="/api/v1/benefits", tags=["Benefits"])
