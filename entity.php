@@ -18,7 +18,7 @@ $id = $_GET['id'] ?? null;
 $entities = [
     'users' => [
         'name' => 'Users',
-        'endpoint' => '/users',
+        'endpoint' => '/users/',
         'icon' => 'fa-users',
         'color' => 'indigo',
         'fields' => [
@@ -34,7 +34,7 @@ $entities = [
     ],
     'absence_requests' => [
         'name' => 'Absence Requests',
-        'endpoint' => '/absence-requests',
+        'endpoint' => '/absence-requests/',
         'icon' => 'fa-calendar-times',
         'color' => 'yellow',
         'fields' => [
@@ -50,7 +50,7 @@ $entities = [
     ],
     'schedules' => [
         'name' => 'Schedules',
-        'endpoint' => '/horarios-base',
+        'endpoint' => '/horarios-base/',
         'icon' => 'fa-calendar-alt',
         'color' => 'green',
         'fields' => [
@@ -63,7 +63,7 @@ $entities = [
     ],
     'turnos' => [
         'name' => 'Shifts',
-        'endpoint' => '/turnos',
+        'endpoint' => '/turnos/',
         'icon' => 'fa-clock',
         'color' => 'blue',
         'fields' => [
@@ -77,7 +77,7 @@ $entities = [
     ],
     'payroll' => [
         'name' => 'Payroll',
-        'endpoint' => '/payroll',
+        'endpoint' => '/payroll/',
         'icon' => 'fa-money-bill-wave',
         'color' => 'purple',
         'fields' => [
@@ -95,7 +95,7 @@ $entities = [
     ],
     'audits' => [
         'name' => 'Time Audits',
-        'endpoint' => '/auditoria-horarios',
+        'endpoint' => '/auditoria-horarios/',
         'icon' => 'fa-clipboard-check',
         'color' => 'red',
         'fields' => [
@@ -110,7 +110,7 @@ $entities = [
     ],
     'benefits' => [
         'name' => 'Benefits',
-        'endpoint' => '/benefits',
+        'endpoint' => '/benefits/',
         'icon' => 'fa-gift',
         'color' => 'pink',
         'fields' => [
@@ -125,7 +125,7 @@ $entities = [
     ],
     'notifications' => [
         'name' => 'Notifications',
-        'endpoint' => '/notifications',
+        'endpoint' => '/notifications/',
         'icon' => 'fa-bell',
         'color' => 'orange',
         'fields' => [
